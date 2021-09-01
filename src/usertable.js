@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import { Button, Card, TablePagination } from "@material-ui/core";
 const UserTable = (props) => {
-  const [rowsPerPage, setRowsPerPage] = React.useState(5);
+  const [rowsPerPage, setRowsPerPage] = React.useState(6);
   const [page, setPage] = React.useState(0);
 
   const handleChangePage = (event, newPage) => {
@@ -72,7 +72,7 @@ const UserTable = (props) => {
 
       <TablePagination
         className="px-4"
-        rowsPerPageOptions={[5, 10, 15]}
+        rowsPerPageOptions={[6, 12, 24]}
         component="div"
         count={props.users.length}
         rowsPerPage={rowsPerPage}
