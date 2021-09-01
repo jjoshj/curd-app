@@ -1,0 +1,53 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  .card {
+    display: grid;
+    padding: 2rem;
+    background: whitesmoke;
+  }
+  .userImage {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 20px;
+    padding: 2px;
+  }
+  .username {
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+  .users {
+    display: grid;
+    gap: 2rem;
+  }
+  @media (min-width: 340px) {
+    .card {
+      grid-template-columns: 1fr 1fr;
+    }
+    .usersButton {
+      grid-column: 2 span;
+      text-align: center;
+    }
+    .userImage {
+      grid-column: 1 span;
+     align-content: center;
+      height: 10rem;
+      width: 10rem;
+      position: static;
+    }
+  }
+  @media (min-width: 700px) {
+    .users {
+      grid-template-columns: 1fr 1fr;
+    }
+    .inputArea {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+    }
+    .addnewuser {
+      grid-column: 2 span;
+    }
+  }
+  
